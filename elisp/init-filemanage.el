@@ -49,6 +49,7 @@ Version 2019-11-04"
 ;; tabs navigation
 (use-package centaur-tabs
   :ensure t
+  :init (centaur-tabs-mode)
   :config
   (setq centaur-tabs-style "bar"
 	centaur-tabs-height 22
@@ -64,7 +65,6 @@ Version 2019-11-04"
   (centaur-tabs-headline-match)
   (setq uniquify-separator "/")
   (setq uniquify-buffer-name-style 'forward)
-  (centaur-tabs-mode)
   (defun centaur-tabs-buffer-groups ()
     "`centaur-tabs-buffer-groups' control buffers' group rules.
  Group centaur-tabs with mode if buffer is derived from `eshell-mode' `emacs-lisp-mode' `dired-mode' `org-mode' `magit-mode'.
